@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Benja</title>
+
+  <!-- Fuente limpia tipo Apple -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(
+  to bottom,
+  #ffffff 0%,
+  #b4939e 55%,
+  #efd6de 100%
+);
+
+      font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #1d1d1f;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgb(209, 179, 179);
+      border-radius: 28px;
+      padding: 60px 45px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .intro {
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #171718;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 22px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      color: #010101;
+      line-height: 1.6;
+      margin-bottom: 35px;
+    }
+
+    button {
+      background: #b68c83;
+      border: none;
+      color: rgb(6, 5, 5);
+      padding: 14px 36px;
+      border-radius: 999px;
+      font-size: 16px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background: #c11f2f;
+    }
+
+    #mensaje {
+      display: none;
+      margin-top: 35px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #09090a;
+      animation: aparecer 0.6s ease;
+    }
+
+    .footer {
+      margin-top: 45px;
+      font-size: 13px;
+      color: #000000;
+      font-style: italic;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <div class="intro">Benja tiene una pregunta</div>
+
+    <!-- Snoopy pidiendo San Valentín -->
+   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmpsZDk3ejliam5sMTFyanR5NW1kcWFyN2N1eGcxYm5nb3U3am1iNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/dlxpKwcG3oUFlBZrAN/giphy.gif" alt="Snoopy GIF">
+
+    <h1>¿Quieres ser mi San Valentín?</h1>
+
+    <p>
+      No es una pregunta impulsiva.  
+      Es una decisión pensada… y deseada.
+    </p>
+
+    <button onclick="mostrarMensaje()">Sí</button>
+
+    <div id="mensaje">
+      Gracias por decir que sí.  
+      <br><br>
+      Me gustaría compartir contigo no solo una fecha,  
+      sino momentos que realmente valgan la pena.
+    </div>
+
+    <div class="footer">
+      No acepto un no por respuesta.
+    </div>
+
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
