@@ -11,12 +11,11 @@
     body {
       margin: 0;
       background: linear-gradient(
-  to bottom,
-  #ffffff 0%,
-  #b4939e 55%,
-  #efd6de 100%
-);
-
+        to bottom,
+        #ffffff 0%,
+        #b4939e 55%,
+        #efd6de 100%
+      );
       font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       color: #1d1d1f;
       min-height: 100vh;
@@ -101,31 +100,34 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Ajuste para celular */
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
+    /* ===== MODO CELULAR – vista cercana tipo app ===== */
+    @media (max-width: 600px) {
+      body {
+        padding: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
 
-  .card {
-    padding: 40px 25px;
-    border-radius: 22px;
-  }
+      .card {
+        margin: 16px auto;
+        width: 94%;
+        max-width: none;
+        padding: 36px 22px;
+        border-radius: 26px;
+      }
 
-  img {
-    margin-bottom: 25px;
-  }
+      img {
+        margin-bottom: 22px;
+      }
 
-  h1 {
-    font-size: 22px;
-  }
+      h1 {
+        font-size: 23px;
+      }
 
-  p {
-    font-size: 15px;
-  }
-}
-
-
+      p {
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -135,7 +137,7 @@
     <div class="intro">Benja tiene una pregunta</div>
 
     <!-- Snoopy pidiendo San Valentín -->
-   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmpsZDk3ejliam5sMTFyanR5NW1kcWFyN2N1eGcxYm5nb3U3am1iNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/dlxpKwcG3oUFlBZrAN/giphy.gif" alt="Snoopy GIF">
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmpsZDk3ejliam5sMTFyanR5NW1kcWFyN2N1eGcxYm5nb3U3am1iNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/dlxpKwcG3oUFlBZrAN/giphy.gif" alt="Snoopy GIF">
 
     <h1>¿Quieres ser mi San Valentín?</h1>
 
@@ -167,3 +169,4 @@
 
 </body>
 </html>
+
