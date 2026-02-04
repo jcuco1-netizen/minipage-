@@ -7,13 +7,15 @@
   <!-- Fuente limpia tipo Apple -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       background: linear-gradient(
         to bottom,
         #ffffff 0%,
-        #b4939e 55%,
+        #d9b6c1 50%,
         #efd6de 100%
       );
       font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -22,12 +24,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 20px;
     }
 
     .card {
       background: rgb(209, 179, 179);
-      border-radius: 28px;
+      border-radius: 30px;
       padding: 60px 45px;
       max-width: 420px;
       width: 100%;
@@ -46,7 +47,7 @@
     img {
       width: 100%;
       border-radius: 22px;
-      margin-bottom: 40px;
+      margin-bottom: 32px;
     }
 
     h1 {
@@ -60,28 +61,29 @@
       font-weight: 300;
       color: #010101;
       line-height: 1.6;
-      margin-bottom: 35px;
+      margin-bottom: 32px;
     }
 
     button {
       background: #b68c83;
       border: none;
       color: rgb(6, 5, 5);
-      padding: 14px 36px;
+      padding: 14px 38px;
       border-radius: 999px;
       font-size: 16px;
       font-weight: 400;
       cursor: pointer;
-      transition: background 0.2s ease;
+      transition: all 0.25s ease;
     }
 
     button:hover {
       background: #c11f2f;
+      transform: scale(1.03);
     }
 
     #mensaje {
       display: none;
-      margin-top: 35px;
+      margin-top: 30px;
       font-size: 16px;
       line-height: 1.7;
       color: #09090a;
@@ -89,7 +91,7 @@
     }
 
     .footer {
-      margin-top: 45px;
+      margin-top: 42px;
       font-size: 13px;
       color: #000000;
       font-style: italic;
@@ -100,20 +102,21 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* ===== MODO CELULAR – vista cercana tipo app ===== */
+    /* 📱 MODO CELULAR – vista cercana tipo app */
     @media (max-width: 600px) {
       body {
         padding: 0;
-        align-items: flex-start;
-        justify-content: flex-start;
       }
 
       .card {
-        margin: 16px auto;
-        width: 94%;
-        max-width: none;
-        padding: 36px 22px;
-        border-radius: 26px;
+        margin: 16px;
+        width: calc(100% - 32px);
+        min-height: calc(100vh - 32px);
+        padding: 32px 22px;
+        border-radius: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
 
       img {
@@ -130,19 +133,20 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="card">
 
     <div class="intro">Benja tiene una pregunta</div>
 
-    <!-- Snoopy pidiendo San Valentín -->
-    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmpsZDk3ejliam5sMTFyanR5NW1kcWFyN2N1eGcxYm5nb3U3am1iNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/dlxpKwcG3oUFlBZrAN/giphy.gif" alt="Snoopy GIF">
+    <!-- Snoopy -->
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmpsZDk3ejliam5sMTFyanR5NW1kcWFyN2N1eGcxYm5nb3U3am1iNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/dlxpKwcG3oUFlBZrAN/giphy.gif" alt="Snoopy">
 
     <h1>¿Quieres ser mi San Valentín?</h1>
 
     <p>
-      No es una pregunta impulsiva.  
+      No es una pregunta impulsiva.<br>
       Es una decisión pensada… y deseada.
     </p>
 
@@ -169,4 +173,3 @@
 
 </body>
 </html>
-
